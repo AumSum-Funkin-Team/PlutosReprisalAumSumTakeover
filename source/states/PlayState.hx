@@ -17,7 +17,7 @@ import backend.Song;
 import backend.Section;
 import backend.Rating;
 
-import substates.GameplayChangersSubstate
+import substates.GameplayChangersSubstate;
 
 import flixel.FlxBasic;
 import flixel.FlxObject;
