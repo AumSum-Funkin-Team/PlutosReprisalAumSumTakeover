@@ -1388,8 +1388,8 @@ class ChartingState extends MusicBeatState
 		tab_group_data.add(new FlxText(noteSkinInputText.x, noteSkinInputText.y - 15, 0, 'Note Texture:'));
 		tab_group_data.add(new FlxText(noteSplashesInputText.x, noteSplashesInputText.y - 15, 0, 'Note Splashes Texture:'));
 
-		tab_group_song.add(check_antiMash);
-		tab_group_song.add(check_disableDebug);
+		tab_group_data.add(check_antiMash);
+		tab_group_data.add(check_disableDebug);
 
 		UI_box.addGroup(tab_group_data);
 	}
