@@ -499,6 +499,10 @@ class FunkinLua {
 			luaTrace("setObjectOrder: Object " + obj + " doesn't exist!", false, false, FlxColor.RED);
 		});
 
+		Lua_helper.add_callback(lua, "getGameplayChangerValue", function(tag:String) {
+			return ClientPrefs.getGameplaySetting(tag, false);
+		});
+		
 		// gay ass tweens
 		set("startTween", function(tag:String, vars:String, values:Any = null, duration:Float, options:Any = null) {
 			var penisExam:Dynamic = LuaUtils.tweenPrepare(tag, vars);
@@ -1490,6 +1494,11 @@ class FunkinLua {
 		DeprecatedFunctions.implement(this);
 		
 		try{
+			Lua.getglobal(lua, "package");
+			Lua.pushstring(lua, Paths.getLuaPackagePath());
+			Lua.setfield(lua, -2, "path");
+			Lua.pop(lua, 1);
+
 			var result:Dynamic = LuaL.dofile(lua, scriptName);
 			var resultStr:String = Lua.tostring(lua, result);
 			if(resultStr != null && result != 0) {

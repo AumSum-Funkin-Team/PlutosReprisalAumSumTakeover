@@ -19,6 +19,7 @@ import openfl.events.Event;
 import openfl.events.IOErrorEvent;
 import lime.system.Clipboard;
 import tjson.TJSON as Json;
+import flixel.math.FlxPoint;
 
 import objects.Character;
 import objects.HealthIcon;
@@ -62,6 +63,9 @@ class CharacterEditorState extends MusicBeatState
 
 	var cameraFollowPointer:FlxSprite;
 	var healthBar:Bar;
+
+	// The begining mouse location that all drag movements are in reference of
+	private var mouseLocation:FlxPoint;
 
 	override function create()
 	{
@@ -135,9 +139,10 @@ class CharacterEditorState extends MusicBeatState
 		\nJKLI - Move Camera
 		\nW/S - Previous/Next Animation
 		\nSpace - Play Animation
-		\nArrow Keys - Move Character Offset
+		\nArrow Keys/Drag & Drop - Move Character Offset
 		\nT - Reset Current Offset
-		\nHold Shift to Move 10x faster\n".split('\n');
+		\nHold down Shift to Move 10x faster
+		\nHold down Control to be able to hold down the Arrow Keys".split('\n');
 
 		for (i in 0...tipTextArray.length-1)
 		{
@@ -1160,10 +1165,53 @@ class CharacterEditorState extends MusicBeatState
 					genBoyOffsets();
 				}
 
+				// Drag and Drop is active when clicking over anything except for the UI boxes.
+				var mouseLoc = FlxG.mouse.getPosition();
+				// Refer to 1210
+				try{
+					if (!FlxG.mouse.overlaps(UI_box) && !FlxG.mouse.overlaps(UI_characterbox)){
+						if (FlxG.mouse.justPressed) mouseLocation = mouseLoc;
+						else if (FlxG.mouse.pressed && FlxG.mouse.justMoved){
+							//If you click during the transition, this sometimes crashes cause
+							//Null object error, because the character won't be loaded
+							var xDiff:Int = Std.int(mouseLoc.x - mouseLocation.x);
+							var yDiff:Int = Std.int(mouseLoc.y - mouseLocation.y);
+							//Moves the entire character
+							if (FlxG.keys.pressed.SHIFT){
+								positionXStepper.value += xDiff;
+								positionYStepper.value += yDiff;
+								getEvent(FlxUINumericStepper.CHANGE_EVENT, positionXStepper, null);
+								getEvent(FlxUINumericStepper.CHANGE_EVENT, positionYStepper, null);
+							}
+							//Moves the animation
+							else{
+								char.animationsArray[curAnim].offsets[0] -= xDiff;
+								char.animationsArray[curAnim].offsets[1] -= yDiff;
+								char.addOffset(char.animationsArray[curAnim].anim, char.animationsArray[curAnim].offsets[0],
+									char.animationsArray[curAnim].offsets[1]);
+								ghostChar.addOffset(char.animationsArray[curAnim].anim, char.animationsArray[curAnim].offsets[0],
+									char.animationsArray[curAnim].offsets[1]);
+							}
+							char.playAnim(char.animationsArray[curAnim].anim, false);
+							if (ghostChar.animation.curAnim != null
+								&& char.animation.curAnim != null
+								&& char.animation.curAnim.name == ghostChar.animation.curAnim.name)
+							{
+								ghostChar.playAnim(char.animation.curAnim.name, false);
+							}
+							genBoyOffsets();
+							mouseLocation = mouseLoc;
+						}
+					}
+				}
+				catch (e){
+					trace("Temporary error caught");
+				}
+
 				var controlArray:Array<Bool> = [FlxG.keys.justPressed.LEFT, FlxG.keys.justPressed.RIGHT, FlxG.keys.justPressed.UP, FlxG.keys.justPressed.DOWN];
 
-
-
+				if (FlxG.keys.pressed.CONTROL) controlArray = [FlxG.keys.pressed.LEFT, FlxG.keys.pressed.RIGHT, FlxG.keys.pressed.UP, FlxG.keys.pressed.DOWN];
+				
 				for (i in 0...controlArray.length) {
 					if(controlArray[i]) {
 						var holdShift = FlxG.keys.pressed.SHIFT;

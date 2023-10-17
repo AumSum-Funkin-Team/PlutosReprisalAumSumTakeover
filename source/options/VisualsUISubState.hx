@@ -143,6 +143,17 @@ class VisualsUISubState extends BaseOptionsMenu
 		addOption(option);
 		option.onChange = onChangePauseMusic;
 		
+		/*
+		var option:Option = new Option('Autosave Charts', 'If checked, enables autosaving charts in the Chart Editor.', 'autoSavecharts', 'bool');
+		addOption(option);
+		var option:Option = new Option('Autosave Interval', 'Interval for autosaving charts in minutes', 'autoSaveInterval', 'int');
+		option.scrollSpeed = 5;
+		option.minValue = 1;
+		option.maxValue = 15;
+		option.changeValue = 1;
+		option.displayFormat = '%v Minutes';
+		addOption(option);*/ // later
+
 		#if CHECK_FOR_UPDATES
 		var option:Option = new Option('Check for Updates',
 			'On Release builds, turn this on to check for updates when you start the game.',

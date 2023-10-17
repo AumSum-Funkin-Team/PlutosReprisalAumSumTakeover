@@ -74,7 +74,9 @@ class ChartingState extends MusicBeatState
 		['Kill Henchmen', "For Mom's songs, don't use this please, i love them :("],
 		['Add Camera Zoom', "Used on MILF on that one \"hard\" part\nValue 1: Camera zoom add (Default: 0.015)\nValue 2: UI zoom add (Default: 0.03)\nLeave the values blank if you want to use Default."],
 		['BG Freaks Expression', "Should be used only in \"school\" Stage!"],
+		['Change Icon', "Value 1: Player/BF Icon\nValue 2: Opponent/Dad Icon"],
 		['Trigger BG Ghouls', "Should be used only in \"schoolEvil\" Stage!"],
+		['Set Cam Zoom', "Change the zoom camera \"Value 1: the zoom value\nValue 2: if blank, it will smoothly zoom regularly,\notherwise it will do an instant zoom"],
 		['Play Animation', "Plays an animation on a Character,\nonce the animation is completed,\nthe animation changes to Idle\n\nValue 1: Animation to play.\nValue 2: Character (Dad, BF, GF)"],
 		['Camera Follow Pos', "Value 1: X\nValue 2: Y\n\nThe camera won't change the follow point\nafter using this, for getting it back\nto normal, leave both values blank."],
 		['Alt Idle Animation', "Sets a specified suffix after the idle animation name.\nYou can use this to trigger 'idle-alt' if you set\nValue 2 to -alt\n\nValue 1: Character to set (Dad, BF or GF)\nValue 2: New suffix (Leave it blank to disable)"],
@@ -207,7 +209,9 @@ class ChartingState extends MusicBeatState
 				player2: 'dad',
 				gfVersion: 'gf',
 				speed: 1,
-				stage: 'stage'
+				stage: 'stage',
+				disableAntiMash: false,
+				disableDebugButtons: false
 			};
 			addSection();
 			PlayState.SONG = _song;
@@ -1339,6 +1343,19 @@ class ChartingState extends MusicBeatState
 			//trace('CHECKED!');
 		};
 
+		var check_antiMash = new FlxUICheckBox(10, 200, null, null, "No Ghost Tap", 100);
+		check_antiMash.checked = _song.disableAntiMash;
+		check_antiMash.callback = function()
+		{
+			_song.disableAntiMash = check_antiMash.checked;
+		};
+		var check_disableDebug = new FlxUICheckBox(10, 220, null, null, "Enable Anticheat", 100);
+		check_disableDebug.checked = _song.disableDebugButtons;
+		check_disableDebug.callback = function()
+		{
+			_song.disableDebugButtons = check_disableDebug.checked;
+		};
+
 		//
 		noteSkinInputText = new FlxUIInputText(10, 280, 150, _song.arrowSkin != null ? _song.arrowSkin : '', 8);
 		blockPressWhileTypingOn.push(noteSkinInputText);
@@ -1370,6 +1387,10 @@ class ChartingState extends MusicBeatState
 
 		tab_group_data.add(new FlxText(noteSkinInputText.x, noteSkinInputText.y - 15, 0, 'Note Texture:'));
 		tab_group_data.add(new FlxText(noteSplashesInputText.x, noteSplashesInputText.y - 15, 0, 'Note Splashes Texture:'));
+
+		tab_group_song.add(check_antiMash);
+		tab_group_song.add(check_disableDebug);
+
 		UI_box.addGroup(tab_group_data);
 	}
 

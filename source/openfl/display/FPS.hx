@@ -89,6 +89,9 @@ class FPS extends TextField
 			text += "\nMemory: " + memoryMegas + " MB";
 			#end
 
+			text += "\nPluto's Reprisal: AumSum Takeover DEMO";
+			text += "\nState: " + Main.initialState;
+
 			textColor = 0xFFFFFFFF;
 			if (memoryMegas > 3000 || currentFPS <= ClientPrefs.data.framerate / 2)
 			{

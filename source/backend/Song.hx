@@ -23,6 +23,9 @@ typedef SwagSong =
 	var player2:String;
 	var gfVersion:String;
 	var stage:String;
+	
+	@:optional var disableAntiMash:Bool;
+	@:optional var disableDebugButtons:Bool;
 
 	@:optional var gameOverChar:String;
 	@:optional var gameOverSound:String;
@@ -54,6 +57,8 @@ class Song
 	public var player1:String = 'bf';
 	public var player2:String = 'dad';
 	public var gfVersion:String = 'gf';
+	public var disableAntiMash:Bool = false;
+	public var disableDebugButtons:Bool = false;
 
 	private static function onLoadJson(songJson:Dynamic) // Convert old charts to newest format
 	{

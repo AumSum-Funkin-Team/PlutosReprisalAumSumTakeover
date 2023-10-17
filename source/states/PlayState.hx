@@ -1631,10 +1631,6 @@ class PlayState extends MusicBeatState
 
 	override public function update(elapsed:Float)
 	{
-		/*if (FlxG.keys.justPressed.NINE)
-		{
-			iconP1.swapOldIcon();
-		}*/
 		callOnScripts('onUpdate', [elapsed]);
 
 		FlxG.camera.followLerp = 0;
@@ -1668,7 +1664,7 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		if (controls.justPressed('debug_1') && !endingSong && !inCutscene)
+		if (controls.justPressed('debug_1') && !endingSong && !inCutscene && !SONG.disableDebugButtons)
 			openChartEditor();
 
 		var mult:Float = FlxMath.lerp(1, iconP1.scale.x, FlxMath.bound(1 - (elapsed * 9 * playbackRate), 0, 1));
@@ -1705,7 +1701,7 @@ class PlayState extends MusicBeatState
 				iconP2.animation.curAnim.curFrame = (healthBar.percent > 80) ? 1 : 0;
 		}
 
-		if (controls.justPressed('debug_2') && !endingSong && !inCutscene)
+		if (controls.justPressed('debug_2') && !endingSong && !inCutscene && !SONG.disableDebugButtons)
 			openCharacterEditor();
 		
 		if (startedCountdown && !paused)
@@ -2011,6 +2007,19 @@ class PlayState extends MusicBeatState
 			case 'Set GF Speed':
 				if(flValue1 == null || flValue1 < 1) flValue1 = 1;
 				gfSpeed = Math.round(flValue1);
+
+			case 'Set Cam Zoom':
+				var val1:Float = Std.parseFloat(value1);
+				var val2:Float = Std.parseFloat(value2);
+				if (value2 == '') defaultCamZoom = val1;
+				else{
+					defaultCamZoom = val1;
+					FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, val2, {ease: FlxEase.sineInOut});
+				}
+
+			case 'Change Icon':
+				iconP1.changeIcon(value1);
+				iconP2.changeIcon(value2);
 
 			case 'Add Camera Zoom':
 				if(ClientPrefs.data.camZooms && FlxG.camera.zoom < 1.35) {
@@ -2602,6 +2611,8 @@ class PlayState extends MusicBeatState
 		});
 	}
 
+	var shouldMiss:Bool = true;
+	
 	public var strumsBlocked:Array<Bool> = [];
 	private function onKeyPress(event:KeyboardEvent):Void
 	{
@@ -2630,7 +2641,11 @@ class PlayState extends MusicBeatState
 		});
 		plrInputNotes.sort(sortHitNotes);
 
-		var shouldMiss:Bool = !ClientPrefs.data.ghostTapping;
+		if (!SONG.disableAntiMash) {
+			shouldMiss = true;
+		} else {
+			shouldMiss = !ClientPrefs.data.ghostTapping;
+		}
 
 		if (plrInputNotes.length != 0) { // slightly faster than doing `> 0` lol
 			var funnyNote:Note = plrInputNotes[0]; // front note
