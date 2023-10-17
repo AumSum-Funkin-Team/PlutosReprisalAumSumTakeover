@@ -1,5 +1,7 @@
-# Friday Night Funkin' - Psych Engine
-Engine originally used on [Mind Games Mod](https://gamebanana.com/mods/301107), intended to be a fix for the vanilla version's many issues while keeping the casual play aspect of it. Also aiming to be an easier alternative to newbie coders.
+# PR AumSum Takeover
+plutos reprisal btw
+
+also most or some of the assets are placeholders
 
 ## Installation:
 You must have [Haxe](https://haxe.org/download/), installed in order to move on to these next steps
