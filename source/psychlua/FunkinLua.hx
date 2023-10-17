@@ -41,6 +41,7 @@ import psychlua.HScript;
 #end
 import psychlua.DebugLuaText;
 import psychlua.ModchartSprite;
+import flixel_5_3_1.ParallaxSprite; // flixel 5 render pipeline
 
 class FunkinLua {
 	public static var Function_Stop:Dynamic = "##PSYCHLUA_FUNCTIONSTOP";
@@ -982,6 +983,18 @@ class FunkinLua {
 			LuaUtils.loadFrames(leSprite, image, spriteType);
 			game.modchartSprites.set(tag, leSprite);
 		});
+		set("makeParallaxSprite", function(tag:String, ?image:String = null, ?x:Float = 0, ?y:Float = 0) {
+			tag = tag.replace('.', '');
+			LuaUtils.resetSpriteTag(tag, true);
+			var leSprite:ParallaxSprite = new ParallaxSprite(x, y, Paths.image(image));
+			game.modchartParallax.set(tag, leSprite);
+			leSprite.active = true;
+		});
+		set("fixateParallaxSprite", function(obj:String, anchorX:Int = 0, anchorY:Int = 0, scrollOneX:Float = 1, scrollOneY:Float = 1, scrollTwoX:Float = 1.1, scrollTwoY:Float = 1.1,
+			direct:String = 'horizontal') {
+			var spr:ParallaxSprite = LuaUtils.getObjectDirectly(obj, false);
+			if(spr != null) spr.fixate(anchorX, anchorY, scrollOneX, scrollOneY, scrollTwoX, scrollTwoY, direct);
+		});
 
 		set("makeGraphic", function(obj:String, width:Int = 256, height:Int = 256, color:String = 'FFFFFF') {
 			var spr:FlxSprite = LuaUtils.getObjectDirectly(obj, false);
@@ -1066,6 +1079,20 @@ class FunkinLua {
 						game.insert(game.members.indexOf(LuaUtils.getLowestCharacterGroup()), shit);
 					else
 						GameOverSubstate.instance.insert(GameOverSubstate.instance.members.indexOf(GameOverSubstate.instance.boyfriend), shit);
+				}
+			}
+		});
+		set("addParallaxSprite", function(tag:String, front:Bool = false) {
+			if(game.modchartParallax.exists(tag)) {
+				var spr:ParallaxSprite = game.modchartParallax.get(tag);
+				if(front)
+					LuaUtils.getTargetInstance().add(spr);
+				else
+				{
+					if(!game.isDead)
+						game.insert(game.members.indexOf(LuaUtils.getLowestCharacterGroup()), spr);
+					else
+						GameOverSubstate.instance.insert(GameOverSubstate.instance.members.indexOf(GameOverSubstate.instance.boyfriend), spr);
 				}
 			}
 		});
