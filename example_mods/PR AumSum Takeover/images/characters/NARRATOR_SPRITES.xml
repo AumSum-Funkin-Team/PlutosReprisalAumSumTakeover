@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="arnold.png">
+<SubTexture name="arnold idle0000" x="1396" y="714" width="221" height="657" frameX="-9" frameY="-39" frameWidth="230" frameHeight="696" />
+<SubTexture name="arnold idle0001" x="934" y="714" width="217" height="678" frameX="-6" frameY="-18" frameWidth="230" frameHeight="696" />
+<SubTexture name="arnold idle0002" x="342" y="714" width="211" height="690" frameX="-6" frameY="-6" frameWidth="230" frameHeight="696" />
+<SubTexture name="arnold idle0003" x="781" y="0" width="211" height="696" frameX="-1" frameY="0" frameWidth="230" frameHeight="696" />
+<SubTexture name="arnold idle0004" x="781" y="0" width="211" height="696" frameX="-1" frameY="0" frameWidth="230" frameHeight="696" />
+<SubTexture name="arnold idle0005" x="781" y="0" width="211" height="696" frameX="-1" frameY="0" frameWidth="230" frameHeight="696" />
+<SubTexture name="arnold idle0006" x="781" y="0" width="211" height="696" frameX="-1" frameY="0" frameWidth="230" frameHeight="696" />
+<SubTexture name="arnold idle0007" x="781" y="0" width="211" height="696" frameX="-1" frameY="0" frameWidth="230" frameHeight="696" />
+<SubTexture name="arnold idle0008" x="781" y="0" width="211" height="696" frameX="-1" frameY="0" frameWidth="230" frameHeight="696" />
+<SubTexture name="arnold idle0009" x="781" y="0" width="211" height="696" frameX="-1" frameY="0" frameWidth="230" frameHeight="696" />
+<SubTexture name="arnold right0000" x="1963" y="0" width="671" height="639" frameX="0" frameY="0" frameWidth="671" frameHeight="639" />
+<SubTexture name="arnold right0001" x="1963" y="639" width="663" height="639" frameX="0" frameY="0" frameWidth="671" frameHeight="639" />
+<SubTexture name="arnold right0002" x="0" y="1409" width="649" height="639" frameX="0" frameY="0" frameWidth="671" frameHeight="639" />
+<SubTexture name="arnold left0000" x="992" y="0" width="351" height="695" frameX="-1" frameY="0" frameWidth="355" frameHeight="695" />
+<SubTexture name="arnold left0001" x="1343" y="0" width="351" height="695" frameX="-4" frameY="0" frameWidth="355" frameHeight="695" />
+<SubTexture name="arnold left0002" x="0" y="714" width="342" height="695" frameX="-13" frameY="0" frameWidth="355" frameHeight="695" />
+<SubTexture name="arnold up0000" x="0" y="0" width="397" height="714" frameX="-5" frameY="0" frameWidth="402" frameHeight="714" />
+<SubTexture name="arnold up0001" x="397" y="0" width="384" height="702" frameX="-3" frameY="-12" frameWidth="402" frameHeight="714" />
+<SubTexture name="arnold up0002" x="553" y="714" width="381" height="682" frameX="0" frameY="-32" frameWidth="402" frameHeight="714" />
+<SubTexture name="arnold down0000" x="649" y="1409" width="287" height="636" frameX="0" frameY="-23" frameWidth="287" frameHeight="659" />
+<SubTexture name="arnold down0001" x="1694" y="0" width="269" height="648" frameX="0" frameY="-11" frameWidth="287" frameHeight="659" />
+<SubTexture name="arnold down0002" x="1151" y="714" width="245" height="659" frameX="0" frameY="0" frameWidth="287" frameHeight="659" />
+</TextureAtlas>

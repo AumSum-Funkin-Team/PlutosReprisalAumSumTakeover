@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 11,
+			"anim": "idle",
+			"loop": false,
+			"name": "arnold idle"
+		},
+		{
+			"offsets": [
+				46,
+				11
+			],
+			"indices": [],
+			"fps": 11,
+			"anim": "singUP",
+			"loop": false,
+			"name": "arnold up"
+		},
+		{
+			"offsets": [
+				181,
+				-56
+			],
+			"indices": [],
+			"fps": 11,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "arnold right"
+		},
+		{
+			"offsets": [
+				18,
+				-37
+			],
+			"indices": [],
+			"fps": 11,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "arnold down"
+		},
+		{
+			"offsets": [
+				120,
+				3
+			],
+			"indices": [],
+			"fps": 11,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "arnold left"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/NARRATOR_SPRITES",
+	"position": [
+		100,
+		90
+	],
+	"healthicon": "narrator-newest",
+	"flip_x": false,
+	"healthbar_colors": [
+		231,
+		1,
+		1
+	],
+	"camera_position": [
+		-20,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

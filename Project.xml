@@ -155,7 +155,6 @@
 	<!--Macro fixes-->
 	<haxeflag name="--macro" value="allowPackage('flash')" />
 	<haxeflag name="--macro" value="include('my.pack')" />
-
 	<haxeflag name="-dce" value="no" if="HSCRIPT_ALLOWED" />
 	<haxeflag name="-dce" value="std" unless="HSCRIPT_ALLOWED" />
 
