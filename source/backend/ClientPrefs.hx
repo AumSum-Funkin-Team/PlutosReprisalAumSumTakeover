@@ -40,6 +40,9 @@ class SaveVariables {
 	public var timeBarType:String = 'Time Left';
 	public var scoreZoom:Bool = true;
 	public var noReset:Bool = false;
+	public var showMsText:Bool = true;
+	public var fpsRainbow:Bool = false; // kadedev
+	public var coloredHealthBar:Bool = true;
 	public var healthBarAlpha:Float = 1;
 	public var hitsoundVolume:Float = 0;
 	public var pauseMusic:String = 'Tea Time';

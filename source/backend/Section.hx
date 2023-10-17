@@ -3,7 +3,8 @@ package backend;
 typedef SwagSection =
 {
 	var sectionNotes:Array<Dynamic>;
-	var sectionBeats:Float;
+	var lengthInSteps:Int; // legacy chart/os engine chart support;
+	var sectionBeats:Float; // time signatures support;
 	var typeOfSection:Int;
 	var mustHitSection:Bool;
 	var gfSection:Bool;
@@ -16,19 +17,20 @@ class Section
 {
 	public var sectionNotes:Array<Dynamic> = [];
 
+	public var lengthInSteps:Int = 16;
 	public var sectionBeats:Float = 4;
 	public var gfSection:Bool = false;
 	public var typeOfSection:Int = 0;
 	public var mustHitSection:Bool = true;
 
 	/**
-	 *	Copies the first section into the second section!
+	 *	UNUSED
 	 */
 	public static var COPYCAT:Int = 0;
 
-	public function new(sectionBeats:Float = 4)
-	{
-		this.sectionBeats = sectionBeats;
-		trace('test created section: ' + sectionBeats);
-	}
+	public function new(sectionBeats:Float = 4, lengthInSteps:Int = 16)
+		{
+			this.sectionBeats = sectionBeats;
+			this.lengthInSteps = lengthInSteps;
+		}
 }

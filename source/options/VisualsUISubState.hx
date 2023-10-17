@@ -96,6 +96,16 @@ class VisualsUISubState extends BaseOptionsMenu
 			'bool');
 		addOption(option);
 
+		var option:Option = new Option('Display MS Offset On Note Hits', 'If checked, the note offset (in milliseconds) will appear near notes.',
+		'showMsText', 'bool');
+	addOption(option);
+
+		var option:Option = new Option('Icon Colored Health Bar',
+		"If unchecked, the health bar will have set colors\nrather than colors based on the icons.",
+		'coloredHealthBar',
+		'bool');
+	    addOption(option);
+
 		var option:Option = new Option('Score Text Zoom on Hit',
 			"If unchecked, disables the Score text zooming\neverytime you hit a note.",
 			'scoreZoom',
@@ -114,6 +124,9 @@ class VisualsUISubState extends BaseOptionsMenu
 		addOption(option);
 		
 		#if !mobile
+		var option:Option = new Option('Rainbow FPS', "If checked, makes the FPS have a chroma effect.\nSo Kade Engine, isn't it?", 'fpsRainbow', 'bool');
+		addOption(option);
+		
 		var option:Option = new Option('FPS Counter',
 			'If unchecked, hides FPS Counter.',
 			'showFPS',
