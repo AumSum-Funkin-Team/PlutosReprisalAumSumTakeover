@@ -46,7 +46,6 @@ import substates.PauseSubState;
 import substates.GameOverSubstate;
 
 #if !flash 
-import flixel.addons.display.FlxRuntimeShader;
 import openfl.filters.ShaderFilter;
 #end
 
@@ -1006,7 +1005,7 @@ class PlayState extends MusicBeatState
 			var swagCounter:Int = 0;
 
 			if (ClientPrefs.data.showMsText) {
-				if (ClientPrefs.downScroll) {
+				if (ClientPrefs.data.downScroll) {
 					msTimeTxt.x = playerStrums.members[1].x-100;
 					msTimeTxt.y = playerStrums.members[1].y+100;
 				} else {
@@ -1014,7 +1013,7 @@ class PlayState extends MusicBeatState
 					msTimeTxt.y = playerStrums.members[1].y-50;
 				}
 
-				if (ClientPrefs.middleScroll) {
+				if (ClientPrefs.data.middleScroll) {
 					msTimeTxt.x = playerStrums.members[0].x-250;
 					msTimeTxt.y = playerStrums.members[1].y+30;
 				}
