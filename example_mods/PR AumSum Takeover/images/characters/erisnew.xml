@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="erisnew.png"><SubTexture name="erisnew danceleft0000" x="1991" y="1042" width="631" height="513" frameX="-740" frameY="-771" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="erisnew danceleft0001" x="663" y="1061" width="624" height="523" frameX="-752" frameY="-771" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="erisnew danceleft0002" x="1320" y="528" width="625" height="527" frameX="-757" frameY="-770" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="erisnew danceleft0003" x="678" y="0" width="642" height="529" frameX="-744" frameY="-762" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="erisnew danceleft0004" x="1287" y="1061" width="659" height="523" frameX="-725" frameY="-759" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="erisnew danceright0000" x="0" y="1061" width="663" height="526" frameX="-697" frameY="-771" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="erisnew danceright0001" x="1320" y="0" width="671" height="528" frameX="-690" frameY="-768" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="erisnew danceright0002" x="0" y="0" width="678" height="532" frameX="-695" frameY="-766" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="erisnew danceright0003" x="0" y="532" width="670" height="529" frameX="-714" frameY="-759" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="erisnew danceright0004" x="1991" y="0" width="659" height="522" frameX="-725" frameY="-760" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="erisnew cheer0000" x="1991" y="522" width="619" height="520" frameX="-766" frameY="-623" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="erisnew cheer0001" x="670" y="532" width="616" height="526" frameX="-769" frameY="-622" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="erisnew cheer0002" x="0" y="1587" width="625" height="503" frameX="-761" frameY="-643" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="erisnew cheer0003" x="625" y="1587" width="637" height="490" frameX="-748" frameY="-661" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="erisnew cheer0004" x="1262" y="1587" width="638" height="489" frameX="-746" frameY="-663" frameWidth="1920" frameHeight="1920" />
+</TextureAtlas>

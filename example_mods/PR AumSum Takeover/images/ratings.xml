@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="ratings.png">
+    <SubTexture name="?0000" x="300" y="0" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" pivotX="0" pivotY="0"/>
+    <SubTexture name="?0001" x="0" y="300" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="?0002" x="300" y="300" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="?0003" x="600" y="0" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="F0000" x="600" y="300" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" pivotX="4.5" pivotY="7.6"/>
+    <SubTexture name="F0001" x="0" y="600" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="F0002" x="300" y="600" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="F0003" x="600" y="600" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="F0004" x="900" y="0" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="E0000" x="900" y="300" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" pivotX="4.5" pivotY="7.6"/>
+    <SubTexture name="E0001" x="900" y="600" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="E0002" x="0" y="900" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="E0003" x="300" y="900" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="E0004" x="600" y="900" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="E0005" x="900" y="900" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="E0006" x="1200" y="0" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="E0007" x="1200" y="300" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="E0008" x="1200" y="600" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="E0009" x="1200" y="900" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="D0000" x="0" y="1200" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" pivotX="4.5" pivotY="7.6"/>
+    <SubTexture name="D0001" x="300" y="1200" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="D0002" x="600" y="1200" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="D0003" x="900" y="1200" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="D0004" x="1200" y="1200" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="C0000" x="1500" y="0" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" pivotX="4.5" pivotY="7.6"/>
+    <SubTexture name="C0001" x="1500" y="300" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="C0002" x="1500" y="600" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="C0003" x="1500" y="900" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="C0004" x="1500" y="1200" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="B0000" x="0" y="1500" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" pivotX="4.5" pivotY="7.6"/>
+    <SubTexture name="B0001" x="300" y="1500" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="B0002" x="600" y="1500" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="B0003" x="900" y="1500" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="B0004" x="1200" y="1500" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="A0000" x="1500" y="1500" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" pivotX="4.5" pivotY="7.6"/>
+    <SubTexture name="A0001" x="1800" y="0" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="A0002" x="1800" y="300" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="A0003" x="1800" y="600" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="A0004" x="1800" y="900" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="A0005" x="1800" y="1200" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="S0000" x="1800" y="1500" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" pivotX="4.5" pivotY="7.6"/>
+    <SubTexture name="S0001" x="0" y="1800" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="S0002" x="300" y="1800" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="S0003" x="600" y="1800" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="S0004" x="900" y="1800" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="S0005" x="1200" y="1800" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="S0006" x="1500" y="1800" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="PLUS0000" x="0" y="0" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" pivotX="4.5" pivotY="7.6"/>
+    <SubTexture name="PLUS0001" x="1800" y="1800" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="PLUS0002" x="2100" y="0" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="PLUS0003" x="2100" y="300" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="PLUS0004" x="2100" y="600" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="PLUS0005" x="2100" y="900" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="PLUS0006" x="2100" y="1200" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+    <SubTexture name="PLUS0007" x="2100" y="1500" width="300" height="300" frameX="0" frameY="0" frameWidth="300" frameHeight="300" />
+</TextureAtlas>

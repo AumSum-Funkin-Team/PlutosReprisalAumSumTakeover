@@ -171,6 +171,7 @@ class FunkinLua {
 		// Some settings, no jokes
 		set('downscroll', ClientPrefs.data.downScroll);
 		set('middlescroll', ClientPrefs.data.middleScroll);
+		set('showcaseMode', ClientPrefs.showcaseMode);
 		set('framerate', ClientPrefs.data.framerate);
 		set('ghostTapping', ClientPrefs.data.ghostTapping);
 		set('hideHud', ClientPrefs.data.hideHud);
@@ -890,6 +891,9 @@ class FunkinLua {
 		});
 		set("setRatingFC", function(value:String) {
 			game.ratingFC = value;
+		});
+		set("setBotPlayText", function(value:String) {
+			game.botplayTxt.text = value;
 		});
 		set("getMouseX", function(camera:String) {
 			var cam:FlxCamera = LuaUtils.cameraFromString(camera);

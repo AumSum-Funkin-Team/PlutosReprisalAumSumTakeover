@@ -44,6 +44,11 @@ class CreditsState extends MusicBeatState
 		#end
 
 		var defaultList:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
+			['AumSum Takeover Team'],
+			['Venusian',		'venusian',		'Main Director of AumSum Takeover',								'https://twitter.com/Shadow_Mario_',	'444444'],
+			['Isaiah Mods',				'isaiah',			'Artist, Composer, Animator, Chromatic Scaler',							'https://twitter.com/riverennn',		'B42F71'],
+			['Digital Hourglass',				'digi',			"Creator of Pluto's Reprisal",							'https://twitter.com/riverennn',		'B42F71'],
+			[''],
 			['Psych Engine Team'],
 			['Shadow Mario',		'shadowmario',		'Main Programmer of Psych Engine',								'https://twitter.com/Shadow_Mario_',	'444444'],
 			['Riveren',				'riveren',			'Main Artist/Animator of Psych Engine',							'https://twitter.com/riverennn',		'B42F71'],

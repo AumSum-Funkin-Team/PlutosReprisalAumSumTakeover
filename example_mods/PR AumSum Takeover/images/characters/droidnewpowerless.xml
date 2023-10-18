@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="droidnewpowerless.png"><SubTexture name="droidnewpowerless idle0000" x="1139" y="1279" width="559" height="400" frameX="-653" frameY="-769" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnewpowerless idle0001" x="1139" y="1279" width="559" height="400" frameX="-653" frameY="-766" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnewpowerless idle0002" x="1698" y="1279" width="557" height="400" frameX="-653" frameY="-760" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnewpowerless idle0003" x="0" y="1723" width="560" height="386" frameX="-652" frameY="-752" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnewpowerless left0000" x="0" y="0" width="758" height="658" frameX="-590" frameY="-655" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnewpowerless left0001" x="560" y="1723" width="562" height="386" frameX="-597" frameY="-749" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnewpowerless left0002" x="1122" y="1723" width="563" height="386" frameX="-606" frameY="-747" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnewpowerless down0000" x="1475" y="0" width="798" height="613" frameX="-670" frameY="-787" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnewpowerless down0001" x="570" y="1279" width="569" height="443" frameX="-670" frameY="-785" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnewpowerless down0002" x="0" y="1279" width="570" height="444" frameX="-670" frameY="-778" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnewpowerless up0000" x="0" y="658" width="799" height="621" frameX="-642" frameY="-514" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnewpowerless up0001" x="799" y="658" width="557" height="458" frameX="-643" frameY="-662" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnewpowerless up0002" x="1475" y="613" width="557" height="459" frameX="-643" frameY="-669" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnewpowerless right0000" x="758" y="0" width="717" height="636" frameX="-821" frameY="-631" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnewpowerless right0001" x="1685" y="1723" width="446" height="382" frameX="-816" frameY="-757" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnewpowerless right0002" x="2273" y="0" width="446" height="382" frameX="-807" frameY="-756" frameWidth="1920" frameHeight="1920" />
+</TextureAtlas>

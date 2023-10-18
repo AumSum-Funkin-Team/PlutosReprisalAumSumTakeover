@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="droidnew.png"><SubTexture name="droidnew idle0000" x="3940" y="0" width="1168" height="994" frameX="-44" frameY="-218" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnew idle0001" x="3940" y="994" width="1167" height="991" frameX="-45" frameY="-219" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnew idle0002" x="3940" y="1985" width="1166" height="990" frameX="-44" frameY="-218" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnew idle0003" x="0" y="3240" width="1170" height="989" frameX="-42" frameY="-217" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnew left0000" x="1426" y="0" width="1305" height="1088" frameX="-43" frameY="-225" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnew left0001" x="2565" y="3240" width="1115" height="982" frameX="-44" frameY="-224" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnew left0002" x="3680" y="3240" width="1125" height="981" frameX="-44" frameY="-225" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnew down0000" x="0" y="0" width="1426" height="1183" frameX="-42" frameY="-217" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnew down0001" x="2731" y="1008" width="1193" height="1007" frameX="-46" frameY="-221" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnew down0002" x="0" y="2235" width="1196" height="1005" frameX="-44" frameY="-217" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnew up0000" x="1170" y="3240" width="1395" height="989" frameX="-46" frameY="-223" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnew up0001" x="2350" y="2235" width="1155" height="995" frameX="-45" frameY="-223" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnew up0002" x="1196" y="2235" width="1154" height="1003" frameX="-46" frameY="-223" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnew right0000" x="0" y="1183" width="1496" height="1052" frameX="-42" frameY="-215" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnew right0001" x="1496" y="1183" width="1219" height="1008" frameX="-43" frameY="-218" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="droidnew right0002" x="2731" y="0" width="1209" height="1008" frameX="-44" frameY="-218" frameWidth="1920" frameHeight="1920" />
+</TextureAtlas>

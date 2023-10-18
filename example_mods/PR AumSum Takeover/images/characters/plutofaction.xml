@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="plutofaction.png"><SubTexture name="plutofaction idle0000" x="3565" y="0" width="743" height="656" frameX="-554" frameY="-687" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="plutofaction idle0001" x="2263" y="2262" width="747" height="660" frameX="-551" frameY="-683" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="plutofaction idle0002" x="753" y="2262" width="746" height="663" frameX="-555" frameY="-680" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="plutofaction idle0003" x="0" y="2943" width="758" height="654" frameX="-546" frameY="-676" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="plutofaction idle0004" x="1499" y="2262" width="764" height="661" frameX="-553" frameY="-671" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="plutofaction left0000" x="0" y="3597" width="987" height="644" frameX="-378" frameY="-677" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="plutofaction left0001" x="2603" y="2943" width="917" height="651" frameX="-433" frameY="-676" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="plutofaction left0002" x="1680" y="2943" width="923" height="653" frameX="-425" frameY="-674" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="plutofaction left0003" x="758" y="2943" width="922" height="654" frameX="-425" frameY="-673" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="plutofaction down0000" x="2837" y="0" width="728" height="690" frameX="-621" frameY="-707" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="plutofaction down0001" x="3565" y="1310" width="733" height="644" frameX="-606" frameY="-712" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="plutofaction down0002" x="3565" y="1954" width="736" height="644" frameX="-608" frameY="-715" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="plutofaction down0003" x="3565" y="656" width="734" height="654" frameX="-608" frameY="-704" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="plutofaction up0000" x="0" y="0" width="776" height="790" frameX="-487" frameY="-608" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="plutofaction up0001" x="635" y="1554" width="755" height="693" frameX="-504" frameY="-649" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="plutofaction up0002" x="1390" y="1554" width="756" height="692" frameX="-502" frameY="-654" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="plutofaction up0003" x="0" y="2262" width="753" height="681" frameX="-503" frameY="-662" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="plutofaction right0000" x="987" y="3597" width="745" height="602" frameX="-677" frameY="-676" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="plutofaction right0001" x="2837" y="690" width="712" height="617" frameX="-677" frameY="-673" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="plutofaction right0002" x="3520" y="2943" width="708" height="613" frameX="-683" frameY="-674" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="plutofaction right0003" x="2837" y="1307" width="710" height="616" frameX="-681" frameY="-671" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="plutofaction missleft0000" x="2195" y="0" width="642" height="719" frameX="-628" frameY="-673" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="plutofaction missleft0001" x="1177" y="790" width="641" height="720" frameX="-626" frameY="-671" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="plutofaction missdown0000" x="776" y="0" width="707" height="770" frameX="-546" frameY="-683" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="plutofaction missdown0001" x="1483" y="0" width="712" height="769" frameX="-543" frameY="-680" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="plutofaction missup0000" x="0" y="790" width="588" height="764" frameX="-675" frameY="-662" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="plutofaction missup0001" x="588" y="790" width="589" height="756" frameX="-674" frameY="-666" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="plutofaction missright0000" x="2195" y="719" width="638" height="711" frameX="-686" frameY="-672" frameWidth="1920" frameHeight="1920" />
+<SubTexture name="plutofaction missright0001" x="0" y="1554" width="635" height="708" frameX="-684" frameY="-672" frameWidth="1920" frameHeight="1920" />
+</TextureAtlas>
