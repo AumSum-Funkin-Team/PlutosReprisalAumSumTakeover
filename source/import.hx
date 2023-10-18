@@ -4,6 +4,10 @@
 import backend.Discord;
 #end
 
+#if (!flash && sys)
+import flixel.addons.display.FlxRuntimeShader;
+#end
+
 //Psych
 #if ACHIEVEMENTS_ALLOWED
 import backend.Achievements;
