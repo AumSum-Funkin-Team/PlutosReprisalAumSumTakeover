@@ -52,6 +52,10 @@ class GraphicsSettingsSubState extends BaseOptionsMenu
 			'int');
 		addOption(option);
 
+		var option:Option = new Option('Fullscreen', "Should the game be maximized?", 'fullscreen', 'bool');
+		addOption(option);
+		option.onChange = onChangeFullscreen;
+
 		option.minValue = 60;
 		option.maxValue = 240;
 		option.displayFormat = '%v FPS';
@@ -91,5 +95,10 @@ class GraphicsSettingsSubState extends BaseOptionsMenu
 	{
 		super.changeSelection(change);
 		boyfriend.visible = (antialiasingOption == curSelected);
+	}
+
+	public static function onChangeFullscreen()
+	{
+		FlxG.fullscreen = ClientPrefs.data.fullscreen;
 	}
 }

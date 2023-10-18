@@ -171,7 +171,7 @@ class FunkinLua {
 		// Some settings, no jokes
 		set('downscroll', ClientPrefs.data.downScroll);
 		set('middlescroll', ClientPrefs.data.middleScroll);
-		set('showcaseMode', ClientPrefs.showcaseMode);
+		set('showcaseMode', ClientPrefs.data.showcaseMode);
 		set('framerate', ClientPrefs.data.framerate);
 		set('ghostTapping', ClientPrefs.data.ghostTapping);
 		set('hideHud', ClientPrefs.data.hideHud);
@@ -1499,7 +1499,7 @@ class FunkinLua {
 		
 		try{
 			Lua.getglobal(lua, "package");
-			Lua.pushstring(lua, Paths.getLuaPackagePath());
+			Lua.pushstring(lua, Mods.getLuaPackagePath());
 			Lua.setfield(lua, -2, "path");
 			Lua.pop(lua, 1);
 

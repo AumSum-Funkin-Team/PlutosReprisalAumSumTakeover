@@ -92,7 +92,7 @@ class TitleState extends MusicBeatState
 		Paths.clearStoredMemory();
 		Paths.clearUnusedMemory();
 
-		clearTemps("./");
+		clearTempFiles("./");
 		
 		#if LUA_ALLOWED
 		Mods.pushGlobalMods();
@@ -160,10 +160,10 @@ class TitleState extends MusicBeatState
 
 		if(!initialized)
 		{
-			if(FlxG.save.data != null && FlxG.save.data.fullscreen)
-			{
-				FlxG.fullscreen = FlxG.save.data.fullscreen;
-			}
+			if (FlxG.save.data != null && ClientPrefs.data.fullscreen)
+				{
+					FlxG.fullscreen = ClientPrefs.data.fullscreen;
+				}
 			persistentUpdate = true;
 			persistentDraw = true;
 		}

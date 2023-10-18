@@ -16,6 +16,7 @@ class SaveVariables {
 	public var autoSaveInterval:Int = 5;
 	public var autoSavecharts:Bool = true;
 	public var autoPause:Bool = true;
+	public var fullscreen:Bool = false;
 	public var antialiasing:Bool = true;
 	public var showcaseMode:Bool = false;
 	public var noteSkin:String = 'Default';
