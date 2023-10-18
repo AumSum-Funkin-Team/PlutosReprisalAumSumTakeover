@@ -45,9 +45,13 @@ class CreditsState extends MusicBeatState
 
 		var defaultList:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
 			['AumSum Takeover Team'],
-			['Venusian',		'venusian',		'Main Director of AumSum Takeover',								'https://twitter.com/Shadow_Mario_',	'444444'],
-			['Isaiah Mods',				'isaiah',			'Artist, Composer, Animator, Chromatic Scaler',							'https://twitter.com/riverennn',		'B42F71'],
-			['Digital Hourglass',				'digi',			"Creator of Pluto's Reprisal",							'https://twitter.com/riverennn',		'B42F71'],
+			['Chinmay Shah',		'arnold',		'Creator of AumSum',								'https://in.linkedin.com/in/chinmayshah17',	'444444'],
+			['Venusian',		'venusian',		'Main Director of AumSum Takeover',								'https://youtube.com/c/CharlesCat',	'444444'],
+			['Isaiah Mods',				'isaiah',			'Artist, Composer, Animator, Chromatic Scaler',							'https://www.youtube.com/channel/UCeILJmD-UdDIqI86eadDCZQ',		'B42F71'],
+			['TheAnimateMan',				'animate',			'Artist, Animator',							'https://twitter.com/riverennn',		'B42F71'],
+			['ThatChillster',				'eeloo',			'Creator of PCS, Composer',							'https://twitter.com/riverennn',		'B42F71'],
+			['Digital Hourglass', /*wait did i spell the name right idk*/				'digi',			"Creator of Pluto's Reprisal",							'https://www.youtube.com/channel/UCyVyj6AfoO4ojNoEo-RKe3g',		'FF2B00E1'],
+			['LoopyAntenna',				'loopy',			'Creator of DimSum',							'https://twitter.com/riverennn',		'B42F71'],
 			[''],
 			['Psych Engine Team'],
 			['Shadow Mario',		'shadowmario',		'Main Programmer of Psych Engine',								'https://twitter.com/Shadow_Mario_',	'444444'],

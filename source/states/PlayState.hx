@@ -677,7 +677,7 @@ class PlayState extends MusicBeatState
 		Paths.clearUnusedMemory();
 		
 		CustomFadeTransition.nextCamera = camOther;
-		if (ClientPrefs.showcaseMode) {
+		if (ClientPrefs.data.showcaseMode) {
 			camHUD.visible = false;
 			instance.cpuControlled = true;
 		}
