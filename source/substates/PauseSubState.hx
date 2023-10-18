@@ -219,7 +219,7 @@ class PauseSubState extends MusicBeatSubstate
 
 					var errorStr:String = e.toString();
 					if(errorStr.startsWith('[file_contents,assets/data/')) errorStr = 'Missing file: ' + errorStr.substring(27, errorStr.length-1); //Missing chart
-					missingText.text = 'ERROR WHILE LOADING CHART:\n$errorStr';
+					missingText.text = 'Missing difficulty! Or there is only one, probably. \n$errorStr';
 					missingText.screenCenter(Y);
 					missingText.visible = true;
 					missingTextBG.visible = true;

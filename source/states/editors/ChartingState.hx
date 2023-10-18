@@ -2174,7 +2174,7 @@ class ChartingState extends MusicBeatState
 		backend.NoteTypesConfig.clearNoteTypesData();
 		super.destroy();
 	}
-	
+
 	var lastSecBeats:Float = 0;
 	var lastSecBeatsNext:Float = 0;
 	var columns:Int = 9;
@@ -3078,7 +3078,7 @@ class ChartingState extends MusicBeatState
 			}
 			else missingTextTimer.cancel();
 
-			missingText.text = 'ERROR WHILE LOADING CHART:\n$errorStr';
+			missingText.text = 'Look, did you forget the chart? \n$errorStr';
 			missingText.screenCenter(Y);
 
 			missingTextTimer = new FlxTimer().start(5, function(tmr:FlxTimer) {
