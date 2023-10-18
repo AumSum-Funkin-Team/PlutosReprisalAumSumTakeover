@@ -34,6 +34,9 @@ typedef TitleData =
 	starty:Float,
 	gfx:Float,
 	gfy:Float,
+	gfscalex:Float,
+	gfscaley:Float,
+	gfantialiasing:Bool,
 	backgroundSprite:String,
 	bpm:Float
 }
@@ -73,11 +76,24 @@ class TitleState extends MusicBeatState
 
 	public static var updateVersion:String = '';
 
+	static function clearTempFiles(dir:String)
+	{
+		#if desktop
+		for (file in FileSystem.readDirectory(dir)){
+			var file = './$dir/$file';
+			if (FileSystem.isDirectory(file)) clearTempFiles(file);
+			else if (file.endsWith(".tempcopy")) FileSystem.deleteFile(file);
+		}
+		#end
+	}
+
 	override public function create():Void
 	{
 		Paths.clearStoredMemory();
 		Paths.clearUnusedMemory();
 
+		clearTemps("./");
+		
 		#if LUA_ALLOWED
 		Mods.pushGlobalMods();
 		#end
@@ -147,7 +163,6 @@ class TitleState extends MusicBeatState
 			if(FlxG.save.data != null && FlxG.save.data.fullscreen)
 			{
 				FlxG.fullscreen = FlxG.save.data.fullscreen;
-				//trace('LOADED FULLSCREEN SETTING!!');
 			}
 			persistentUpdate = true;
 			persistentDraw = true;
@@ -221,7 +236,8 @@ class TitleState extends MusicBeatState
 
 		if(ClientPrefs.data.shaders) swagShader = new ColorSwap();
 		gfDance = new FlxSprite(titleJSON.gfx, titleJSON.gfy);
-		gfDance.antialiasing = ClientPrefs.data.antialiasing;
+		gfDance.scale.set(titleJSON.gfscalex, titleJSON.gfscaley);
+		gfDance.antialiasing = titleJSON.gfantialiasing;
 
 		var easterEgg:String = FlxG.save.data.psychDevsEasterEgg;
 		if(easterEgg == null) easterEgg = ''; //html5 fix
@@ -361,7 +377,15 @@ class TitleState extends MusicBeatState
 
 		var pressedEnter:Bool = FlxG.keys.justPressed.ENTER || controls.ACCEPT;
 
-		#if mobile
+		if (FlxG.keys.justPressed.ESCAPE && !pressedEnter){
+				FlxG.sound.music.fadeOut(0.3);
+				FlxG.camera.fade(FlxColor.BLACK, 0.5, false, function()
+				{
+					Sys.exit(0);
+				}, false);
+		}
+
+		#if mobile //EW MOBILE CODE
 		for (touch in FlxG.touches.list)
 		{
 			if (touch.justPressed)
@@ -402,16 +426,16 @@ class TitleState extends MusicBeatState
 			
 			if(pressedEnter)
 			{
-				titleText.color = FlxColor.WHITE;
-				titleText.alpha = 1;
-				
-				if(titleText != null) titleText.animation.play('press');
+				if (titleText != null){
+						titleText.color = FlxColor.WHITE;
+						titleText.alpha = 1;
+						titleText.animation.play('press');
+				};
 
 				FlxG.camera.flash(ClientPrefs.data.flashing ? FlxColor.WHITE : 0x4CFFFFFF, 1);
 				FlxG.sound.play(Paths.sound('confirmMenu'), 0.7);
 
 				transitioning = true;
-				// FlxG.sound.music.stop();
 
 				new FlxTimer().start(1, function(tmr:FlxTimer)
 				{

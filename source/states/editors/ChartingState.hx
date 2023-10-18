@@ -1526,6 +1526,7 @@ class ChartingState extends MusicBeatState
 			{
 				case 'section_beats':
 					_song.notes[curSec].sectionBeats = nums.value;
+					_song.notes[curSec].lengthInSteps = Std.int(nums.value);
 					reloadGridLayer();
 
 				case 'song_speed':

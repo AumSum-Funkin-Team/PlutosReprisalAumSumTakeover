@@ -273,6 +273,49 @@ class ExtraFunctions
 			return list;
 		});
 
+		// Regex, hi mag engine creator!
+		funk.set("regexMatch", function(str:String, toMatch:String, flag:String = "i")
+		{
+			return new EReg(str, flag).match(toMatch);
+		});
+		funk.set("regexSubMatch", function(str:String, toMatch:String, pos:Int, len:Int = -1, flag:String = "i")
+		{
+			return new EReg(str, flag).matchSub(toMatch, pos, len);
+		});
+		funk.set("regexFindMatchAt", function(str:String, toMatch:String, n:Int, flag:String = "i")
+		{
+			var theData = new EReg(str, flag);
+			theData.match(toMatch);
+			return theData.matched(n);
+		});
+		funk.set("regexFindFirstMatch", function(str:String, toMatch:String, flag:String = "i")
+		{
+			var theData = new EReg(str, flag);
+			theData.match(toMatch);
+			return theData.matchedLeft();
+		});
+		funk.set("regexFindLastMatch", function(str:String, toMatch:String, flag:String = "i")
+		{
+			var theData = new EReg(str, flag);
+			theData.match(toMatch);
+			return theData.matchedRight();
+		});
+		funk.set("regexMatchPosition", function(str:String, toMatch:String, flag:String = "i")
+		{
+			var data = new EReg(str, flag);
+			data.match(toMatch);
+			var theData = data.matchedPos();
+			return [theData.pos, theData.len];
+		});
+		funk.set("regexReplace", function(str:String, toReplace:String, replacement:String, flag:String = "i")
+		{
+			return new EReg(str, flag).replace(toReplace, replacement);
+		});
+		funk.set("regexSplit", function(str:String, toSplit:String, flag:String = "i")
+		{
+			return new EReg(str, flag).split(toSplit);
+		});
+
 		// String tools
 		funk.set("stringStartsWith", function(str:String, start:String) {
 			return str.startsWith(start);

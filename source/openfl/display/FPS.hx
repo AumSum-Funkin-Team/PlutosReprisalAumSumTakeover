@@ -86,10 +86,11 @@ class FPS extends TextField
 			
 			#if openfl
 			memoryMegas = Math.abs(FlxMath.roundDecimal(System.totalMemory / 1000000, 1));
-			text += "\nMemory: " + memoryMegas + " MB";
+			text += "\nMEM Usage: " + memoryMegas + " MB";
 			#end
 
-			text += "\nPluto's Reprisal: AumSum Takeover DEMO";
+			text += "\nPsych Engine v0.7.1 Custom Build | Digirati Engine";
+			text += "\nPluto's Reprisal: AumSum Takeover 1.0 DEMO";
 			text += "\nState: " + Main.initialState;
 
 			textColor = 0xFFFFFFFF;

@@ -15,6 +15,7 @@ import options.OptionsState;
 class MainMenuState extends MusicBeatState
 {
 	public static var psychEngineVersion:String = '0.7.1h'; //This is also used for Discord RPC
+	public static var prAumSumVersion:String = '1.0 DEMO'; // This is also used for Discord RPC
 	public static var curSelected:Int = 0;
 
 	var menuItems:FlxTypedGroup<FlxSprite>;
@@ -105,11 +106,11 @@ class MainMenuState extends MusicBeatState
 
 		FlxG.camera.follow(camFollow, null, 0);
 
-		var versionAgain:FlxText = new FlxText(12, FlxG.height - 44, 0, "Pluto's Reprisal: AumSum Takeover DEMO", 12);
+		var versionAgain:FlxText = new FlxText(12, FlxG.height - 44, 0, "Pluto's Reprisal: AumSum Takeover" + prAumSumVersion, 12);
 		versionAgain.scrollFactor.set();
 		versionAgain.setFormat(Paths.font('mvboli.ttf'), 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionAgain);
-		var versionAgain:FlxText = new FlxText(12, FlxG.height - 44, 0, "Psych Engine v" + psychEngineVersion, 12);
+		var versionAgain:FlxText = new FlxText(12, FlxG.height - 44, 0, 'Psych Engine v$psychEngineVersion', 12);
 		versionAgain.scrollFactor.set();
 		versionAgain.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionAgain);

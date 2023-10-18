@@ -45,6 +45,8 @@ class SaveVariables {
 	public var scoreZoom:Bool = true;
 	public var noReset:Bool = false;
 	public var showMsText:Bool = true;
+	public var laneUnderlay:Float = 0;
+	public var instantRespawn:Bool = false;
 	public var fpsRainbow:Bool = false; // kadedev
 	public var coloredHealthBar:Bool = true;
 	public var healthBarAlpha:Float = 1;
