@@ -90,7 +90,7 @@ class FPS extends TextField
 			#end
 
 			text += "\nPsych Engine v0.7.1 Custom Build | Digirati Engine";
-			text += "\nPluto's Reprisal: AumSum Takeover 1.0 DEMO";
+			text += "\nPluto's Reprisal: AumSum Takeover";
 			text += "\nState: " + Main.initialState;
 
 			textColor = 0xFFFFFFFF;

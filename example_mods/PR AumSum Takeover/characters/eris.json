@@ -1,0 +1,177 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				9,
+				0
+			],
+			"loop": false,
+			"anim": "cheer",
+			"fps": 24,
+			"name": "Sad",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				-19
+			],
+			"loop": false,
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Idle Left",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				-20
+			],
+			"loop": false,
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Idle Left",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				4
+			],
+			"loop": false,
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Idle Right",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				-20
+			],
+			"loop": false,
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Idle Right",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-22,
+				-14
+			],
+			"loop": false,
+			"anim": "sad",
+			"fps": 24,
+			"name": "Sad",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12
+			]
+		},
+		{
+			"offsets": [
+				0,
+				-9
+			],
+			"loop": false,
+			"anim": "danceLeft",
+			"fps": 24,
+			"name": "Idle Left",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			]
+		},
+		{
+			"offsets": [
+				0,
+				-9
+			],
+			"loop": false,
+			"anim": "danceRight",
+			"fps": 24,
+			"name": "Idle Right",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			]
+		},
+		{
+			"offsets": [
+				45,
+				-8
+			],
+			"loop": true,
+			"anim": "hairBlow",
+			"fps": 24,
+			"name": "Sad",
+			"indices": [
+				0,
+				1,
+				2,
+				3
+			]
+		},
+		{
+			"offsets": [
+				-2,
+				-17
+			],
+			"loop": true,
+			"anim": "scared",
+			"fps": 24,
+			"name": "Scared",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-1,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "pre-attack",
+			"loop": false,
+			"name": "bf pre attack"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/erisnew",
+	"position": [
+		-260,
+		-420
+	],
+	"healthicon": "gf",
+	"flip_x": false,
+	"healthbar_colors": [
+		165,
+		0,
+		77
+	],
+	"camera_position": [
+		-50,
+		50
+	],
+	"sing_duration": 4,
+	"scale": 0.9
+}

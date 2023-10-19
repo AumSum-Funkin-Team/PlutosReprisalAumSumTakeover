@@ -1,59 +1,59 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"indices": [],
-			"fps": 11,
 			"anim": "idle",
-			"loop": false,
-			"name": "arnold idle"
+			"fps": 11,
+			"name": "arnold idle",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				46,
 				11
 			],
-			"indices": [],
-			"fps": 11,
 			"anim": "singUP",
-			"loop": false,
-			"name": "arnold up"
+			"fps": 11,
+			"name": "arnold up",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				181,
 				-56
 			],
-			"indices": [],
-			"fps": 11,
 			"anim": "singRIGHT",
-			"loop": false,
-			"name": "arnold right"
+			"fps": 11,
+			"name": "arnold right",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				18,
 				-37
 			],
-			"indices": [],
-			"fps": 11,
 			"anim": "singDOWN",
-			"loop": false,
-			"name": "arnold down"
+			"fps": 11,
+			"name": "arnold down",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				120,
 				3
 			],
-			"indices": [],
-			"fps": 11,
 			"anim": "singLEFT",
-			"loop": false,
-			"name": "arnold left"
+			"fps": 11,
+			"name": "arnold left",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
@@ -62,7 +62,7 @@
 		100,
 		90
 	],
-	"healthicon": "narrator-newest",
+	"healthicon": "arnold",
 	"flip_x": false,
 	"healthbar_colors": [
 		231,

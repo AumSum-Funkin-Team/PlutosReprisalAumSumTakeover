@@ -1,0 +1,155 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				13,
+				0
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "idle",
+			"loop": false,
+			"name": "plutonew idle"
+		},
+		{
+			"offsets": [
+				7,
+				-5
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "plutonew left"
+		},
+		{
+			"offsets": [
+				-9,
+				-47
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "plutonew down"
+		},
+		{
+			"offsets": [
+				-29,
+				25
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singUP",
+			"loop": false,
+			"name": "plutonew up"
+		},
+		{
+			"offsets": [
+				-49,
+				-7
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "plutonew right"
+		},
+		{
+			"offsets": [
+				9,
+				19
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singLEFTmiss",
+			"loop": false,
+			"name": "plutonew missleft"
+		},
+		{
+			"offsets": [
+				-14,
+				-21
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singDOWNmiss",
+			"loop": false,
+			"name": "plutonew missdown"
+		},
+		{
+			"offsets": [
+				-45,
+				22
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singRIGHTmiss",
+			"loop": false,
+			"name": "plutonew missright"
+		},
+		{
+			"offsets": [
+				-36,
+				29
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singUPmiss",
+			"loop": false,
+			"name": "plutonew missup"
+		},
+		{
+			"offsets": [
+				-1,
+				5
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "hey",
+			"loop": false,
+			"name": "plutonew hey"
+		},
+		{
+			"offsets": [
+				15,
+				18
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "hurt",
+			"loop": false,
+			"name": "plutonew hurt"
+		},
+		{
+			"offsets": [
+				-10,
+				-15
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "dodge",
+			"loop": false,
+			"name": "plutonew dodge"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/plutonew",
+	"position": [
+		-530,
+		-470
+	],
+	"healthicon": "pluto",
+	"flip_x": true,
+	"healthbar_colors": [
+		150,
+		115,
+		70
+	],
+	"camera_position": [
+		-180,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 0.8
+}

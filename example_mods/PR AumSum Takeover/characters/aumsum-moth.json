@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 9,
+			"anim": "idle",
+			"loop": false,
+			"name": "aumsum angry idle dance"
+		},
+		{
+			"offsets": [
+				58,
+				-1
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "aumsum angry left"
+		},
+		{
+			"offsets": [
+				-4,
+				-33
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "aumsum angry down"
+		},
+		{
+			"offsets": [
+				-17,
+				24
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singUP",
+			"loop": false,
+			"name": "aumsum angry up"
+		},
+		{
+			"offsets": [
+				-45,
+				0
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "aumsum angry right"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/moth",
+	"position": [
+		0,
+		170
+	],
+	"healthicon": "mothballs",
+	"flip_x": false,
+	"healthbar_colors": [
+		38,
+		38,
+		38
+	],
+	"camera_position": [
+		-50,
+		-90
+	],
+	"sing_duration": 6.1,
+	"scale": 1.2
+}

@@ -34,9 +34,8 @@ class HealthIcon extends FlxSprite
 		if (this.char != char)
 		{
 			var name:String = 'icons/' + char;
-			if (!Paths.fileExists('images/' + name + '.png', IMAGE))
-				name = 'icons/icon-' + char; // Older versions of psych engine's support
-			if (!Paths.fileExists('images/' + name + '.png', IMAGE))
+			if (!Paths.fileExists('images/' + name + '.png', IMAGE)) name = 'icons/icon-' + char; // Older versions of psych engine's support
+			if (!Paths.fileExists('images/' + name + '.png', IMAGE)) 
 				name = 'icons/icon-face'; // Prevents crash from missing icon
 
 			var graphic = Paths.image(name, allowGPU);
@@ -59,10 +58,8 @@ class HealthIcon extends FlxSprite
 			this.char = char;
 			if (!isOldIcon) defChar = char;
 
-			if (char.endsWith('-pixel'))
-				antialiasing = false;
-			else
-				antialiasing = ClientPrefs.data.antialiasing;
+			if (char.endsWith('-pixel')) antialiasing = false;
+			else antialiasing = ClientPrefs.data.antialiasing;
 		}
 	}
 	override function updateHitbox(){
