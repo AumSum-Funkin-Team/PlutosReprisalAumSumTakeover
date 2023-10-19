@@ -43,7 +43,6 @@ class HealthIcon extends FlxSprite
 			iconOffsets[0] = (width - 150) / 2;
 			iconOffsets[1] = (height - 150) / 2;
 			updateHitbox();
-
 			var anims:Array<Int> = (ratio == 3) ? [0, 1, 2] : (ratio == 1) ? [0] : [0, 1];
 			animation.add(char, anims, 0, false, isPlayer);
 			animation.play(char);
